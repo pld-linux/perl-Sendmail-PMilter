@@ -1,9 +1,9 @@
 #
 %bcond_without	tests		# do not perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Sendmail
 %define	pnam	PMilter
+%include	/usr/lib/rpm/macros.perl
 Summary:	Sendmail::PMilter - Perl binding of Sendmail Milter protocol
 Summary(pl):	Sendmail::PMilter - moduł Perla do obsługi protokołu Milter
 Name:		perl-Sendmail-PMilter
@@ -13,6 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/A/AV/AVAR/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	18f8fd3b69ef98014a1a5d55fbefd3d9
+URL:		http://search.cpan.org/dist/Sendmail-PMilter/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	sendmail-devel >= 8.13.6-3.1

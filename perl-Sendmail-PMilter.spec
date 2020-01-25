@@ -3,7 +3,6 @@
 
 %define	pdir	Sendmail
 %define	pnam	PMilter
-%include	/usr/lib/rpm/macros.perl
 Summary:	Sendmail::PMilter - Perl binding of Sendmail Milter protocol
 Summary(pl):	Sendmail::PMilter - moduł Perla do obsługi protokołu Milter
 Name:		perl-Sendmail-PMilter

@@ -6,16 +6,15 @@
 Summary:	Sendmail::PMilter - Perl binding of Sendmail Milter protocol
 Summary(pl):	Sendmail::PMilter - moduł Perla do obsługi protokołu Milter
 Name:		perl-Sendmail-PMilter
-Version:	1.00
+Version:	1.28
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/A/AV/AVAR/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	18f8fd3b69ef98014a1a5d55fbefd3d9
+Source0:	https://www.cpan.org/authors/id/G/GW/GWHAYWOOD/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	d1e1cf850935beba24462802450c466b
 URL:		http://search.cpan.org/dist/Sendmail-PMilter/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	sendmail-devel >= 8.13.6-3.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes doc README
+%doc Changes ABOUT ACKNOWLEDGEMENTS CONTRIBUTING README README.1.28 TODO
 %{perl_vendorlib}/Sendmail/*.pm
 %{perl_vendorlib}/Sendmail/PMilter
 %{_mandir}/man3/*
